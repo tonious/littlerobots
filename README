@@ -1,0 +1,31 @@
+# Little Robots
+
+This repository contains
+
+For more information about the project as a whole please see:
+
+*   http://www.tony.thompson.name/2010/01/little-robots-hardware/
+*   http://www.tony.thompson.name/2010/01/little-robots-firmware/
+
+## Firmware
+
+Compiling the firmware requires the avr-gcc toolchain.  Installing it also requires avrdude and some manner of supported AVR programmer.
+
+Ideally, flashing a new ATtiny microcontroller should be as simple as:
+
+cd firmware
+make
+make flash
+make fuse
+
+'make flash' and 'make fuse' may require root on some computers.
+
+## Python Host Software
+
+The python package depends on xmpppy and PyUSB.  Depending on your host system, you may additionally need to install 
+
+Running the python software should be as simple as setting your XMPP credentials in python/commandline.py and then:
+
+cd python
+./commandline.py
+
